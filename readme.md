@@ -41,43 +41,43 @@ The first 6 will be executed in the `master` node, and the last one (Functional 
 
 We use the checkout function to perform a checkout from an scm specifying the `url`, `branches`, and the `credentialsId` :
 
-![images/checkout.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/checkout.png)
 
 ### Second Stage : Build
 
-Here, we're compiling the java classes to bytecode using `maven`:
+Here, we are compiling the java classes to bytecode using `maven`:
 
-![images/build.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/build.png)
 
 ### Third Stage : Unit Tests
 
 Here, We are using the `surefire` plugin to perform the tests suite, and generate a report for the current build.
 
-![images/unit_tests.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/unit_tests.png)
 
 ### Fourth Stage : Packaging
 
 Here, we are compiling, packaging the code, and install the artifacts locally, and archiving them.
 
-![images/packaging.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/packagin.png)
 
 ### Fifth Stage : Deploying to Snapshots Repo
 
 Here we are deploying to the snapshots repository , indicated in the `distributionManagment` tag in **pom.xml** file using the `deploy` phase.
 
-![images/snapshot.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/snapshot.png)
 
 Here we are deploying to the releases repository, indicated in the `distributionManagmenet` tag in **pom.xml** file using the release plugin.
 
 ### Sixth Stage : Deploying to releases Repo.
 
-![images/release.png]()
+![](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/release.png)
 
 ### Seventh Stage : Functional Testing
 
 Here we are downloading our artifact, and testing it on a slave node.
 
-![images/functional.png]()
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/functional.png)
 
 
 # Maintainer
