@@ -59,7 +59,7 @@ Here, We are using the `surefire` plugin to perform the tests suite, and generat
 
 Here, we are compiling, packaging the code, and install the artifacts locally, and archiving them.
 
-![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/packagin.png)
+![DEMO](https://github.com/ayoubensalem/Jenkins-Maven-Project/blob/master/images/packaging.png)
 
 ### Fifth Stage : Deploying to Snapshots Repo
 
